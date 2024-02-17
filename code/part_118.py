@@ -12,8 +12,8 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset, DataLoader
 from tensorboardX import SummaryWriter
 from utils import ConfusionMatrix
-from VGG_14BUS import vgg3_14
-from VGG_118BUS import vgg6_118
+from VGG_14BUS import cnn_14
+from VGG_118BUS import cnn_118
 from aggregation import ModelEncryptor, ModelAggre
 import tenseal as ts
 import time
@@ -102,7 +102,7 @@ class part():
         # writer = SummaryWriter(logdir)
         
         # 选择模型
-        model = vgg6_118.VGG19().cuda()
+        model = cnn_118.VGG19().cuda()
         # 载入权重
         if self.commu > 0:
             model.load_state_dict(torch.load(f'{logdir}/final{self.commu}.pth'))
