@@ -13,8 +13,8 @@ from torch.utils.data import Dataset, DataLoader
 from tensorboardX import SummaryWriter
 from utils import ConfusionMatrix
 from models import  VGG19, VGG19_118, VGG16, SwinTransformer_V2, CNN_LSTM, VGGLSTM
-from VGG_14BUS import vgg3_14
-from VGG_118BUS import vgg6_118
+from VGG_14BUS import cnn_14
+from VGG_118BUS import cnn_118
 
 
 def main():
@@ -59,8 +59,8 @@ def main():
                               num_workers=0)
     # 选择模型
     # 2/3
-    model = vgg3_14.VGG16().cuda()
-    # model = vgg6_118.VGG19().cuda()
+    model = cnn_14.VGG16().cuda()
+    # model = cnn_118.VGG19().cuda()
     
     
     criterion = nn.CrossEntropyLoss().cuda()
