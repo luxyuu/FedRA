@@ -12,9 +12,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset, DataLoader
 from tensorboardX import SummaryWriter
 from utils import ConfusionMatrix
-from models import  VGG19, VGG19_118, VGG16, SwinTransformer_V2, CNN_LSTM, VGGLSTM
-from VGG_14BUS import cnn_14
-from VGG_118BUS import cnn_118
+from model import cnn_14, cnn_118
 
 
 def main():
