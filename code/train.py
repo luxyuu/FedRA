@@ -1,4 +1,4 @@
-# ALL DATA TRAIN
+# Centralized Training
 import numpy as np
 import pandas as pd
 import torch
