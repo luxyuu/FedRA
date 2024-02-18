@@ -3,7 +3,6 @@ import tenseal as ts
 import time
 
 
-# HE_FL
 class ModelEncryptor():
     
     def __init__(self, N, poly_mod_degree=4096, coeff_mod_bit_sizes=[18,18,18]):
