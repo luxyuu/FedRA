@@ -2,7 +2,7 @@ import torch
 import tenseal as ts
 import time
 
-
+# SEC_FL
 class ModelEncryptor():
     
     def __init__(self, N, poly_mod_degree=4096, coeff_mod_bit_sizes=[18,18,18]):
