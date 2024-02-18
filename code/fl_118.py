@@ -1,4 +1,4 @@
-# FL TRAIN
+# FL TRAINING FOR 118BusSystem
 import numpy as np
 import pandas as pd
 import torch
